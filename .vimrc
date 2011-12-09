@@ -5,6 +5,7 @@ set tabstop=4
 set expandtab
 set shiftwidth=4
 set cindent
+set hlsearch
 
 if has("gui_running")
     set gfn=Monospace\ 9
