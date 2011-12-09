@@ -6,6 +6,7 @@ set expandtab
 set shiftwidth=4
 set cindent
 set hlsearch
+set incsearch
 
 filetype plugin indent on   " needed for the pyflakes plugin
 
