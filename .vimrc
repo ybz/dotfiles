@@ -10,6 +10,7 @@ set hlsearch
 set incsearch
 
 filetype plugin indent on   " needed for the pyflakes plugin
+let g:ragtag_global_maps = 1 " needed for the ragtag plugin shortcuts
 
 if has("gui_running")
     set gfn=Monospace\ 9
