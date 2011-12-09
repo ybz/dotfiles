@@ -1,0 +1,21 @@
+[color]
+	status = true
+	diff = yes
+[color "status"]
+	changed = yellow
+	header = blue
+[user]
+	name = Yaniv Ben-Zaken
+	email = yaniv.ben.zaken@gmail.com
+[diff "color"]
+	frag = cyan
+	commit = cyan
+[color "diff"]
+	commit = blue reverse
+	frag = cyan
+	meta = white
+	new = green
+	plain = blue
+[push]
+	default = tracking
+
