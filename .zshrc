@@ -10,6 +10,7 @@ PROMPT="[%(?.%{%b%s%u%}.%S)%m:%{$fg[yellow]%}%.%{$reset_color%}] %% "
 
 # aliases
 alias ls="ls --color=auto"
+alias rmpyc='find . -type f -name "*.pyc" -exec rm -f {} \;'
 
 # git
 alias gs="git status"
