@@ -1,6 +1,7 @@
 colorscheme desert
 
 set nu
+set ruler
 set tabstop=4
 set expandtab
 set shiftwidth=4
