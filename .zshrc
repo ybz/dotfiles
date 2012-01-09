@@ -6,7 +6,7 @@ INC_APPEND_HISTORY=true
 
 # prompt
 autoload -U colors && colors
-PROMPT="[%(?.%{%b%s%u%}.%S)%m: %* %{$fg[yellow]%}%.%{$reset_color%}] > "
+PROMPT="[%(?.%{%b%s%u%}.%S)%m: %* %{$fg[yellow]%}%.%{$reset_color%}] %% "
 
 # aliases
 alias ls="ls --color=auto"
