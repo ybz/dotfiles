@@ -6,7 +6,7 @@
 	header = blue
 [user]
 	name = Yaniv Ben-Zaken
-	email = yaniv.ben.zaken@gmail.com
+	email = yanivbenz@gmail.com
 [diff "color"]
 	frag = cyan
 	commit = cyan
@@ -19,3 +19,5 @@
 [push]
 	default = tracking
 
+[credential]
+	helper = cache
