@@ -6,7 +6,7 @@
 	header = blue
 [user]
 	name = Yaniv Ben-Zaken
-	email = yanivbenz@gmail.com
+	email = me@yaniv.bz
 [diff "color"]
 	frag = cyan
 	commit = cyan
