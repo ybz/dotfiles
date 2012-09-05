@@ -18,3 +18,8 @@ alias gs="git status"
 # completion
 autoload -U compinit
 compinit
+
+
+# keybindings
+bindkey ";3D" backward-word
+bindkey ";3C" forward-word
