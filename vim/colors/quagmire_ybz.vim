@@ -19,7 +19,7 @@ if version > 580
         syntax reset
     endif
 endif
-let g:colors_name="quagmire"
+let g:colors_name="quagmire_ybz"
 
 " UI customization
 hi Normal       guifg=#cfcfcf   guibg=#040f16
