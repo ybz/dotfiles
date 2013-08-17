@@ -11,7 +11,7 @@ let g:loaded_ragtag = 1
 if has("autocmd")
   augroup ragtag
     autocmd!
-    autocmd FileType *html*,wml,xml,xslt,xsd,jsp    call s:Init()
+    autocmd FileType *html*,wml,xml,xslt,xsd,jsp,htmldjango    call s:Init()
     autocmd FileType php,asp*,cf,mason,eruby        call s:Init()
     if version >= 700
       autocmd InsertLeave * call s:Leave()
@@ -126,6 +126,9 @@ function! s:Init()
   elseif &ft == "cf"
     inoremap  <buffer> <C-X>- <cf><Left>
     inoremap  <buffer> <C-X>_ <cfset ><Left>
+  elseif &ft =~ "django"
+    inoremap  <buffer> <C-X>- {%<Space><Space>%}<Esc>2hi
+    inoremap  <buffer> <C-X>_ <C-V><NL><Esc>I{%<Space><Esc>A<Space>%}<Esc>F<NL>s
   else
     imap      <buffer> <C-X>- <C-X><Lt><Space><Space><C-X>><Esc>2hi
     imap      <buffer> <C-X>_ <C-V><NL><Esc>I<C-X><Lt><Space><Esc>A<Space><C-X>><Esc>F<NL>s

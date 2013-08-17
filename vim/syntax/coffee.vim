@@ -50,6 +50,9 @@ syn match coffeeExtendedOp /\%(\S\s*\)\@<=[+\-*/%&|\^=!<>?.]\+\|[-=]>\|--\|++\|:
 syn match coffeeExtendedOp /\<\%(and\|or\)=/ display
 hi def link coffeeExtendedOp coffeeOperator
 
+syn match coffeeFuncOp /[-=]>/
+\                          display
+
 " This is separate from `coffeeExtendedOp` to help differentiate commas from
 " dots.
 syn match coffeeSpecialOp /[,;]/ display
@@ -90,6 +93,9 @@ syn region coffeeString start=/"/ skip=/\\\\\|\\"/ end=/"/
 syn region coffeeString start=/'/ skip=/\\\\\|\\'/ end=/'/
 \                       contains=@coffeeBasicString
 hi def link coffeeString String
+
+syn region coffeeClass matchgroup=coffeeKeyword start=/class\s/  end=/\s/
+hi def link coffeeClass Function
 
 " A integer, including a leading plus or minus
 syn match coffeeNumber /\i\@<![-+]\?\d\+\%([eE][+-]\?\d\+\)\?/ display
