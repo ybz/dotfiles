@@ -1,23 +1,15 @@
-[color]
-	status = true
-	diff = yes
-[color "status"]
-	changed = yellow
-	header = blue
 [user]
 	name = Yaniv Ben-Zaken
 	email = me@yaniv.bz
-[diff "color"]
-	frag = cyan
-	commit = cyan
-[color "diff"]
-	commit = blue reverse
-	frag = cyan
-	meta = white
-	new = green
-	plain = blue
+[color]
+	ui = true
 [push]
 	default = tracking
+
+[color "diff"]
+  plain = blue
+  meta = white dim
+  frag = yellow dim
 
 [credential]
 	helper = cache
