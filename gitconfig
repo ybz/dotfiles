@@ -1,17 +1,24 @@
 [user]
 	name = Yaniv Ben-Zaken
 	email = me@yaniv.bz
-[color]
-	ui = true
+
 [push]
 	default = tracking
+
+[color]
+	ui = true
 
 [color "diff"]
   plain = blue
   meta = white dim
   frag = yellow dim
 
+[color "status"]
+	changed = yellow
+	header = blue
+
 [credential]
 	helper = cache
+
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
