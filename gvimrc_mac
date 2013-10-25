@@ -1,5 +1,5 @@
 colorscheme quagmire_ybz
-set gfn=Menlo:h14
+set gfn=M+\ 1m:h15
 set lines=45
 set columns=120
 set cursorline
