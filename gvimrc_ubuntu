@@ -1,4 +1,4 @@
-set gfn=Monospace\ 10
+set gfn=M+\ 1m\ 12
 winpos 20 40
 set lines=53
 set columns=120
