@@ -3,7 +3,7 @@
 	email = me@yaniv.bz
 
 [push]
-	default = tracking
+	default = upstream
 
 [color]
 	ui = true
