@@ -29,7 +29,7 @@ hi Visual       guifg=#ffffff guibg=#446b00
 hi NonText      guifg=#0000ff
 hi MatchParen   guifg=#000000 guibg=#ff00ea gui=bold
 hi Cursor       guifg=fg        guibg=bg gui=reverse
-hi CursorLine   guibg=#0B1A26
+hi CursorLine   guibg=#0F273A
 hi CursorLineNr   guifg=#8d7f46 guibg=#1d1d1d
 hi TabLine      guibg=bg        guifg=#44444e gui=reverse
 hi TabLineSel   guibg=bg        guifg=#44444e gui=none,bold
