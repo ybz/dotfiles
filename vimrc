@@ -16,3 +16,5 @@ set dir=/tmp
 
 filetype plugin indent on   " needed for the pyflakes plugin
 let g:ragtag_global_maps = 1 " needed for the ragtag plugin shortcuts
+
+autocmd! BufNewFile,BufRead *.ino setlocal ft=arduino
