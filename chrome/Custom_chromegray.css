@@ -1,4 +1,10 @@
 /*****************************************************************************/
+/* Tweaked by Yaniv Ben-Zaken
+/*
+/*************************************************************************/
+
+
+/*****************************************************************************/
 /* Chromegray
 /* Optimized for Chrome Stable Channel v30
 /* https://github.com/karelvuong/chromegray
@@ -169,8 +175,8 @@
 /* SCROLLBARS
 /* --------------------------------------- */
 #-webkit-web-inspector ::-webkit-scrollbar {
-    height: 4px !important;
-    width: 4px !important;
+    height: 8px !important;
+    width: 8px !important;
 }
 
 #-webkit-web-inspector ::-webkit-scrollbar-track {
@@ -179,6 +185,9 @@
 
 #-webkit-web-inspector ::-webkit-scrollbar-thumb {
     background-color: #4F5B66 !important;
+    border-width: 1px !important;
+    border-color: #2B303B !important;
+    border-style: solid;
 }
 
 /* ------------------------------------------
@@ -378,7 +387,7 @@
 #-webkit-web-inspector button.status-bar-item .glyph {
     background-color: #4F5B67 !important;
     box-shadow: 0 0 0 !important;
-    tex-shadow: none !important;
+    text-shadow: none !important;
 }
 
 #-webkit-web-inspector button.scripts-step-over .glyph,
@@ -400,6 +409,21 @@
 #-webkit-web-inspector button.scripts-step-out:disabled .glyph {
     background-color: #222 !important;
 }
+
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
+    background-color: #fff !important;
+    -webkit-mask-image: url(chrome-devtools://devtools/bundled/Images/statusbarButtonGlyphs.png) !important;
+    -webkit-mask-position: -4px -96px !important;
+    background-image: none !important;
+}
+#-webkit-web-inspector .styles-section.matched-styles .properties li.parent.expanded .expand-element {
+    -webkit-mask-position: -20px -96px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+    #-webkit-web-inspector .styles-section.matched-styles .properties li.parent .expand-element {
+        background-image: url(Images/statusbarButtonGlyphs2x.png) !important;
+    }
+} /* media */
 
 /************************************************
 /* Browser Chrome
@@ -1623,11 +1647,11 @@ body.inactive .sidebar-tree-item.selected {
 
 /*exception icon state colors */
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-all .glyph {
-    background-color: rgba(180,3,3,.4) !important;
+    background-color: rgba(50,50,255,.6) !important;
 }
 
 #-webkit-web-inspector .scripts-pause-on-exceptions-status-bar-item.toggled-uncaught .glyph {
-    background-color: rgba(213,181,0,.6) !important;
+    background-color: rgba(220,90,180,.5) !important;
 }
 
 /* sort arrows point down*/
