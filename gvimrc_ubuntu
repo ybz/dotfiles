@@ -1,9 +1,10 @@
-set gfn=M+\ 1m\ 12
+set gfn=M+\ 1m\ Medium\ 11
 winpos 20 40
 set lines=53
 set columns=120
 nmap <C-V> "+gP
 imap <C-V> <ESC><C-V>i
 set cursorline
+colorscheme solarized_ybz
 hi CursorLine guibg=#222835
 hi Normal guibg=#191919
