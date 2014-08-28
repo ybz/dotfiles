@@ -67,7 +67,7 @@ hi Statement    guifg=#0181ff gui=none
 hi Operator     guifg=#FF5E00 gui=none
 hi Type         guifg=#f2a950 gui=none
 hi StorageClass guifg=#7D6C55
-hi String       guifg=#608240 
+hi String       guifg=#6D9448 
 hi Character    guifg=#707576
 hi Special      guifg=#e8742c
 hi Delimiter    guifg=#cfffa8
